@@ -30,14 +30,9 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, var(--moss-forest) 20%, var(--moss-leaf) 100%);
 
-  /* Hero image decorative backdrop */
-  --vp-home-hero-image-background-image: radial-gradient(
-    circle at center,
-    rgba(185, 246, 129, 0.55),
-    rgba(168, 200, 159, 0.25) 55%,
-    transparent 75%
-  );
-  --vp-home-hero-image-filter: blur(40px);
+  /* Hero image decorative backdrop — unused; we style .image-bg directly below. */
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
 
   /* Button primary */
   --vp-button-brand-border: transparent;
@@ -98,10 +93,81 @@ html.dark {
   max-height: 32px;
 }
 
-/* Hero icon — add a soft shadow behind the app icon to match moss.social */
-.VPHero .VPImage {
-  filter: drop-shadow(0 8px 20px rgba(50, 77, 71, 0.25));
-  border-radius: 24px;
+/* Hero icon — mirror the moss.social .hero-icon design:
+ *   - mycelium SVG as a large decorative backdrop
+ *   - conic-gradient halo blurred behind the icon
+ *   - Moss app icon on top */
+.VPHero .image {
+  position: relative;
+}
+
+.VPHero .image-container {
+  position: relative;
+  overflow: visible;
+}
+
+/* The mycelium svg backdrop — tight ratio around the icon (moss.social uses 240:160) */
+.VPHero .image-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 290px;
+  height: 290px;
+  max-width: none;
+  border-radius: 0;
+  background: url('/mycelium-bg.svg') center / contain no-repeat;
+  opacity: 1;
+  filter: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Conic-gradient halo behind the icon (from moss.social .hero-icon-shadow) */
+.VPHero .image-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 128px;
+  border-radius: 14px;
+  background: conic-gradient(
+    from 90deg,
+    rgba(207, 227, 149, 1) 0%,
+    rgba(168, 190, 130, 1) 9.65%,
+    rgba(129, 152, 110, 1) 19.30%,
+    rgba(89, 115, 91, 1) 28.96%,
+    rgba(50, 77, 71, 1) 38.61%,
+    rgba(89, 115, 91, 1) 53.96%,
+    rgba(129, 152, 110, 1) 69.30%,
+    rgba(168, 190, 130, 1) 84.65%,
+    rgba(207, 227, 149, 1) 100%
+  );
+  filter: blur(13px);
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* App icon on top — sized to match moss.social hero-icon-image (160px).
+ * Do not override position/transform; VitePress's default
+ *   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)
+ * is what keeps the icon centered in .image-container. */
+.VPHero .VPImage.image-src {
+  z-index: 2;
+  width: 160px !important;
+  height: 160px !important;
+  max-width: 160px !important;
+  max-height: 160px !important;
+  border-radius: 22px;
+}
+
+/* Dark mode tweak: the mycelium pattern washes out on dark — dim it further */
+html.dark .VPHero .image-bg {
+  opacity: 0.25;
 }
 
 /* Feature cards: soften background with the cream-to-mist gradient */
