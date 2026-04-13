@@ -6,6 +6,9 @@ hero:
   name: 'Moss'
   text: 'A runtime for composable peer-to-peer collaboration'
   tagline: Compose your own suite of collaboration tools. No servers. No middlemen. Just groups.<br><br>🚧 This guide is still under construction 🚧
+  image:
+    src: /hero-icon.png
+    alt: Moss
   actions:
     - theme: brand
       text: Install Moss

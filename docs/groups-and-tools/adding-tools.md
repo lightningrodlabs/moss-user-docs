@@ -8,6 +8,8 @@ A fresh group is an empty space. You make it useful by **adding tools**. Tools a
 
 Moss ships with one or more **Tool Libraries** — curated collections of tools you can browse and install. Any member of the group can install a tool from a library the group has access to.
 
+You can browse the main Moss tool library online at [moss.social/tools](https://moss.social/tools) to see what's available before installing anything.
+
 ## Installing a tool
 
 1. Open the group.

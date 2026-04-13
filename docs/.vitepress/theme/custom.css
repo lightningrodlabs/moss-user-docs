@@ -1,0 +1,121 @@
+/* Moss theme overrides for VitePress.
+ * Colors and gradients pulled from moss.social (see styleguide.css / style.css in moss-website). */
+
+:root {
+  /* Moss palette */
+  --moss-forest-dark: #151a11;
+  --moss-forest-deep: #2d4424;
+  --moss-forest: #3a5228;
+  --moss-forest-soft: #506e3a;
+  --moss-leaf: #85b46e;
+  --moss-leaf-light: #a8c89f;
+  --moss-primary: #e0eed5;
+  --moss-earth: #f5fcf0;
+  --moss-cream: #eafbd5;
+  --moss-mist: #c9e5c4;
+  --moss-bark: #324d47;
+
+  /* Brand color overrides */
+  --vp-c-brand-1: var(--moss-forest);
+  --vp-c-brand-2: var(--moss-forest-deep);
+  --vp-c-brand-3: var(--moss-forest-soft);
+  --vp-c-brand-soft: rgba(58, 82, 40, 0.12);
+  --vp-c-brand-softer: rgba(58, 82, 40, 0.06);
+
+  /* Typography */
+  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+  /* Hero text gradient */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, var(--moss-forest) 20%, var(--moss-leaf) 100%);
+
+  /* Hero image decorative backdrop */
+  --vp-home-hero-image-background-image: radial-gradient(
+    circle at center,
+    rgba(185, 246, 129, 0.55),
+    rgba(168, 200, 159, 0.25) 55%,
+    transparent 75%
+  );
+  --vp-home-hero-image-filter: blur(40px);
+
+  /* Button primary */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-bg: var(--moss-forest);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: var(--moss-forest-deep);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #fff;
+  --vp-button-brand-active-bg: var(--moss-forest-deep);
+}
+
+/* Light-mode page background: gradient from moss.social .container */
+html:not(.dark) {
+  --vp-c-bg: transparent;
+  --vp-c-bg-alt: rgba(255, 255, 255, 0.55);
+  --vp-c-bg-soft: rgba(255, 255, 255, 0.7);
+  --vp-c-bg-elv: rgba(255, 255, 255, 0.85);
+  --vp-sidebar-bg-color: rgba(255, 255, 255, 0.55);
+}
+
+html:not(.dark) body {
+  background: linear-gradient(
+    180deg,
+    rgb(237, 242, 239) 10%,
+    rgb(224, 238, 213) 27%,
+    rgb(249, 255, 231) 63%,
+    rgb(215, 240, 216) 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Give the nav a translucent cover so body gradient shows through softly */
+html:not(.dark) .VPNav {
+  backdrop-filter: blur(10px);
+  background: rgba(245, 252, 240, 0.75);
+}
+
+html:not(.dark) .VPNavBar:not(.has-sidebar):not(.home.top) {
+  background: rgba(245, 252, 240, 0.85) !important;
+}
+
+/* Dark-mode: keep a mossy accent but use VitePress defaults as base */
+html.dark {
+  --vp-c-bg: #151a11;
+  --vp-c-bg-alt: #1c2318;
+  --vp-c-bg-soft: #212a1c;
+  --vp-c-bg-elv: #1c2318;
+  --vp-home-hero-name-background: linear-gradient(120deg, var(--moss-leaf) 20%, var(--moss-cream) 100%);
+}
+
+/* Nav logo: make the wordmark size a bit larger since it replaces site title */
+.VPNavBarTitle .logo {
+  height: 28px;
+  width: auto;
+  max-height: 32px;
+}
+
+/* Hero icon — add a soft shadow behind the app icon to match moss.social */
+.VPHero .VPImage {
+  filter: drop-shadow(0 8px 20px rgba(50, 77, 71, 0.25));
+  border-radius: 24px;
+}
+
+/* Feature cards: soften background with the cream-to-mist gradient */
+html:not(.dark) .VPFeature {
+  background: linear-gradient(218deg, rgba(234, 251, 213, 0.6) 28%, rgba(201, 229, 196, 0.55) 100%);
+  border-color: rgba(58, 82, 40, 0.12);
+  backdrop-filter: blur(4px);
+}
+
+html:not(.dark) .VPFeature:hover {
+  border-color: var(--moss-forest-soft);
+}
+
+/* Sidebar: subtle translucence so the gradient peeks through */
+html:not(.dark) .VPSidebar {
+  backdrop-filter: blur(6px);
+}
