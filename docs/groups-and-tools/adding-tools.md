@@ -37,7 +37,25 @@ Not every tool supports every kind of link. What's possible depends on the tools
 
 ## Updating tools
 
-Tools have their own versions. When a new version of a tool is published, the group can choose to update. Updates are coordinated so that members stay compatible with each other.
+A tool has two parts: its **UI** — what you see and click — and its **happ**, the underlying network definition that holds the group's data. Which part changed determines what kind of update it is, and the two behave very differently.
+
+### UI-only updates
+
+These change just the interface. The happ — and therefore the network and all your data — stays exactly the same.
+
+Moss surfaces UI-only updates as **in-place updates**. They appear in the **Software updates** section on your home screen, one card per tool, each with an **Update** button. Click it and the tool reloads with the new interface. Nothing migrates; your data is untouched, and you don't have to wait for the rest of the group.
+
+### Updates that change the happ
+
+Because the happ *is* the peer-to-peer network, a new happ is a **new network** — it can't be swapped in underneath your existing data. So Moss does **not** offer these as in-place updates.
+
+Instead, a happ change is published as a separate version in the Tool Library. To move to it, the group **installs it as a new tool instance**, which starts with a fresh, empty network. The old instance and its data stay put until someone removes it, so the two can coexist while the group migrates.
+
+This is why a happ update means **the whole group has to move together**: anyone who stays on the old instance is still on the old network and won't see activity in the new one.
+
+### How this looks in the Tool Library
+
+A tool in the library can have multiple **version branches**. UI-only updates happen *within* a branch and reach you automatically as Software updates. A happ change starts a *new* branch — when older branches exist, the library notes "older versions available," and switching to a newer branch is an install, not an update.
 
 ## Next
 
