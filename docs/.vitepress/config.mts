@@ -23,6 +23,7 @@ export default defineConfig({
       { text: 'Intro', link: '/intro/what-is-moss' },
       { text: 'Install', link: '/install/download' },
       { text: 'Groups & Tools', link: '/groups-and-tools/creating-a-group' },
+      { text: 'Assets', link: '/working-with-assets/the-pocket' },
       { text: 'moss.social', link: 'https://moss.social' },
       { text: 'Tool Library', link: 'https://moss.social/tools' },
       { text: 'Dev Docs', link: 'https://lightningrodlabs.github.io/moss/' },
@@ -55,6 +56,11 @@ export default defineConfig({
           { text: 'Inviting Members', link: '/groups-and-tools/inviting-members' },
           { text: 'Adding Tools', link: '/groups-and-tools/adding-tools' },
         ],
+      },
+      {
+        text: '🧩 Working with Assets',
+        collapsed: false,
+        items: [{ text: 'The Pocket', link: '/working-with-assets/the-pocket' }],
       },
     ],
 
