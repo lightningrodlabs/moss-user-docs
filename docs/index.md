@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: 'Moss'
-  text: 'A runtime for composable peer-to-peer collaboration'
-  tagline: Compose your own suite of collaboration tools. No servers. No middlemen. Just groups.<br><br>🚧 This guide is still under construction 🚧
+  name: 'Moss User Guide'
+  text: 'Learn how to use Moss'
+  tagline: Step-by-step help for installing Moss, creating groups, and adding tools. Looking for the product? Visit moss.social.<br><br>🚧 This guide is still under construction 🚧
   image:
     src: /hero-icon.png
     alt: Moss

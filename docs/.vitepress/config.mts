@@ -17,12 +17,13 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: { light: '/moss-logo.svg', dark: '/moss-logo.svg', alt: 'Moss' },
-    siteTitle: false,
+    siteTitle: 'User Guide',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Intro', link: '/intro/what-is-moss' },
       { text: 'Install', link: '/install/download' },
       { text: 'Groups & Tools', link: '/groups-and-tools/creating-a-group' },
+      { text: 'moss.social', link: 'https://moss.social' },
       { text: 'Tool Library', link: 'https://moss.social/tools' },
       { text: 'Dev Docs', link: 'https://lightningrodlabs.github.io/moss/' },
     ],
