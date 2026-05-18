@@ -53,6 +53,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Creating a Group', link: '/groups-and-tools/creating-a-group' },
+          { text: 'Roles & Stewards', link: '/groups-and-tools/roles-and-stewards' },
           { text: 'Inviting Members', link: '/groups-and-tools/inviting-members' },
           { text: 'Adding Tools', link: '/groups-and-tools/adding-tools' },
         ],
