@@ -25,9 +25,20 @@ You can browse the main Moss tool library online at [moss.social/tools](https://
 
 ## How tool instances work
 
-- **Each tool instance is its own private peer-to-peer network**, scoped to this group.
-- **Members of the group can join tool instances.** When someone else installs a tool that already exists in the group, they can join the existing instance rather than creating a new one.
-- **Uninstalling a tool removes it from your device.** Other members' copies are unaffected.
+When you add a tool, you create a **tool instance** — a named, running copy of that tool inside the group.
+
+- **Each instance is its own private peer-to-peer network**, scoped to this group.
+- **You can have several instances of one tool.** Two KanBan boards, three chat rooms — each is separate, with its own name and its own data.
+- **Uninstalling a tool removes it from your device.** Other members' copies are unaffected; the instance lives on as long as anyone in the group still has it.
+
+### Installing a new instance vs. joining an existing one
+
+This is a common point of confusion. Two things look similar but are not the same:
+
+- **Installing from the Tool Library creates a _new_ instance** — a fresh, empty network. Do this when the group needs a tool it doesn't have yet.
+- **Joining an instance a peer already made.** When another member has installed a tool you haven't joined, Moss shows it in the group as available — labelled something like "*+ 2 more used by peers*." Joining it connects you to *their* instance, with all its existing content. You are not making a new copy.
+
+The rule of thumb: if the group already has the tool instance you want, **join it**. Installing a second one from the library instead gives you a separate, empty network that the rest of the group isn't in — the two won't see each other's content.
 
 ## Composing tools
 
