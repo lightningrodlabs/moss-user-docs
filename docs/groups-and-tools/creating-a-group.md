@@ -8,7 +8,7 @@ A **group** in Moss is a private peer-to-peer network. When you create a group, 
 
    ![The Add Group dialog](/screenshots/add-group-dialog.png)
 
-2. **Give the group a name and icon, and pick a group type.** The name and icon are visible to everyone who joins.
+2. **Give the group a name and icon, and pick a group type.** The name and icon are visible to everyone who joins. The **group type** — stewarded or unstewarded — decides who is allowed to change the group, and it **can't be changed later**, so choose with care. See [Roles & Stewards](./roles-and-stewards) for what each type means.
 
    ![The Create Group form](/screenshots/create-group-dialog.png)
 
