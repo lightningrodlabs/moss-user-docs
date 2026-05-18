@@ -2,14 +2,20 @@
 
 A **group** in Moss is a private peer-to-peer network. When you create a group, you're starting a new network. Anyone you invite joins that network and becomes part of the group.
 
-> 🚧 Screenshots coming soon.
-
 ## Steps
 
-1. **From the home screen, click *Create Group*.**
-2. **Give the group a name and icon.** Both are visible to everyone who joins.
+1. **From the home screen, click the *+* button in the groups sidebar**, then choose **Create Group**.
+
+   ![The Add Group dialog](/screenshots/add-group-dialog.png)
+
+2. **Give the group a name and icon, and pick a group type.** The name and icon are visible to everyone who joins.
+
+   ![The Create Group form](/screenshots/create-group-dialog.png)
+
 3. **Set your profile for this group.** You can use a different display name and avatar in each group — your identity in one group is independent of your identity in another.
 4. **Create.** Moss spins up the group's network on your device. You are now the first (and, for the moment, only) member.
+
+   ![A newly created group](/screenshots/group-created.png)
 
 ## What exists at this point
 

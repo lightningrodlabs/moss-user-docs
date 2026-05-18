@@ -2,15 +2,15 @@
 
 New members join a group via an **invite link**. The link contains the information another Moss installation needs to find and connect to the group's network.
 
-> 🚧 Screenshots coming soon.
-
 ## How to invite someone
 
 1. Open the group.
-2. Open the **Members** or group settings panel.
-3. Copy the **invite link**.
+2. Click **Invite People** in the group's top bar.
+3. Click **Copy** to copy the **invite link**.
 4. Send it to the person you want to invite (chat, email, in person, however).
 5. They paste it into the *Join Group* dialog in their own Moss installation.
+
+![The Invite People dialog](/screenshots/invite-people-dialog.png)
 
 ## Security notes
 
@@ -23,10 +23,12 @@ New members join a group via an **invite link**. The link contains the informati
 If you're on the receiving end:
 
 1. Open Moss.
-2. Click **Join Group** on the home screen.
+2. Click the **+** button in the groups sidebar, then choose **Join Group**.
 3. Paste the invite link.
 4. Set your profile (name and avatar) for this group.
 5. Join. Moss will connect to the group's network and sync with other members who are online.
+
+![The Join Group dialog](/screenshots/join-group-dialog.png)
 
 ## When members go offline
 

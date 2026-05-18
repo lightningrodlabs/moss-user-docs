@@ -2,11 +2,11 @@
 
 A fresh group is an empty space. You make it useful by **adding tools**. Tools are the apps you run *inside* a group — chat, documents, task boards, calendars, and so on.
 
-> 🚧 Screenshots coming soon.
-
 ## The Tool Library
 
 Moss ships with one or more **Tool Libraries** — curated collections of tools you can browse and install. Any member of the group can install a tool from a library the group has access to.
+
+![The Tool Library](/screenshots/tool-library.png)
 
 You can browse the main Moss tool library online at [moss.social/tools](https://moss.social/tools) to see what's available before installing anything.
 
@@ -14,9 +14,14 @@ You can browse the main Moss tool library online at [moss.social/tools](https://
 
 1. Open the group.
 2. Click **Add Tool** (or the equivalent "+" in the group's tool bar).
-3. Browse the library and pick a tool.
+3. Browse the library and pick a tool to see its details.
+
+   ![A tool's details](/screenshots/tool-details-dialog.png)
+
 4. Give the instance a **name**. You can have multiple instances of the same tool in a group — e.g. two separate KanBan boards — and each gets its own name.
 5. Install. Moss sets up the tool's network and UI for this group.
+
+   ![A tool installed in a group](/screenshots/tool-installed-in-group.png)
 
 ## How tool instances work
 
