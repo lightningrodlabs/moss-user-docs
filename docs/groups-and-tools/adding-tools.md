@@ -31,14 +31,14 @@ When you add a tool, you create a **tool instance** — a named, running copy of
 - **You can have several instances of one tool.** Two KanBan boards, three chat rooms — each is separate, with its own name and its own data.
 - **Uninstalling a tool removes it from your device.** Other members' copies are unaffected; the instance lives on as long as anyone in the group still has it.
 
-### Installing a new instance vs. joining an existing one
+### Installing a new instance vs. activating an existing one
 
 This is a common point of confusion. Two things look similar but are not the same:
 
 - **Installing from the Tool Library creates a _new_ instance** — a fresh, empty network. Do this when the group needs a tool it doesn't have yet.
-- **Joining an instance a peer already made.** When another member has installed a tool you haven't joined, Moss shows it in the group as available — labelled something like "*+ 2 more used by peers*." Joining it connects you to *their* instance, with all its existing content. You are not making a new copy.
+- **Activating an instance a peer already made.** When another member has installed a tool you don't yet have, Moss shows it in the group as available — labelled something like "*+ 2 more used by peers*." **To join the other members already using that tool, you activate it.** Activating connects you to *their* instance, with all its existing content — you are not making a new copy.
 
-The rule of thumb: if the group already has the tool instance you want, **join it**. Installing a second one from the library instead gives you a separate, empty network that the rest of the group isn't in — the two won't see each other's content.
+The rule of thumb: if the group already has the tool instance you want, **activate it**. Installing a second copy from the library instead gives you a separate, empty network that the rest of the group isn't in — the two won't see each other's content.
 
 ## Composing tools
 
