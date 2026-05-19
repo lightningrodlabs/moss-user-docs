@@ -66,6 +66,11 @@ export default defineConfig({
           { text: 'The Pocket', link: '/tools/the-pocket' },
         ],
       },
+      {
+        text: '⚙️ Settings',
+        collapsed: false,
+        items: [{ text: 'Notification Sounds', link: '/settings/notifications' }],
+      },
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/lightningrodlabs/moss' }],
