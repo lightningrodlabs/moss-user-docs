@@ -18,4 +18,4 @@ If you find your group can't see each other's activity after an update, the most
 
 ## Tools update separately
 
-Tools have their own versions and their own release cadence. See [Adding Tools](../groups-and-tools/adding-tools) for how tool updates are handled within a group.
+Tools have their own versions and their own release cadence. See [Adding Tools](../tools/adding-tools) for how tool updates are handled within a group.

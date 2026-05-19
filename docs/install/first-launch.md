@@ -17,5 +17,5 @@ Moss stores its data in your user config directory:
 
 ## Next step
 
-- [Create your first group](../groups-and-tools/creating-a-group), or
-- Accept an invite from someone else (see [Inviting Members](../groups-and-tools/inviting-members) for how invites work).
+- [Create your first group](../groups/creating-a-group), or
+- Accept an invite from someone else (see [Inviting Members](../groups/inviting-members) for how invites work).

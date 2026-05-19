@@ -21,7 +21,7 @@ A **group** in Moss is a private peer-to-peer network. When you create a group, 
 
 - A new group with you as its sole member
 - An **invite link** you can share with others (see [Inviting Members](./inviting-members))
-- An empty space with no tools installed yet — that's the next step (see [Adding Tools](./adding-tools))
+- An empty space with no tools installed yet — that's the next step (see [Adding Tools](../tools/adding-tools))
 
 ## A group per context
 

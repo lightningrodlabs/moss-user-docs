@@ -45,4 +45,4 @@ What a tool will accept depends on the tool. Not every tool can link to every ki
 
 ## Next
 
-- [Adding Tools](../groups-and-tools/adding-tools) — where assets come from
+- [Adding Tools](./adding-tools) — where assets come from
