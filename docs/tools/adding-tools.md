@@ -21,7 +21,7 @@ You can browse the main Moss tool library online at [moss.social/tools](https://
 4. Give the instance a **name**. You can have multiple instances of the same tool in a group — e.g. two separate KanBan boards — and each gets its own name.
 5. Install. Moss sets up the tool's network and UI for this group.
 
-   > 🚧 Screenshot of an installed tool in the group view to come.
+   ![A tool installed in a group](/screenshots/tool-installed-in-group.png)
 
 ## How tool instances work
 

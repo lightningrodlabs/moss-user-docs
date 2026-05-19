@@ -4,7 +4,7 @@ Once a group has tools, you manage them from one place: the **Group Tools** tab 
 
 Open the group's **Settings** (the gear button), then the **Group Tools** tab. You'll see every tool connected to the group, grouped by its status.
 
-> 🚧 Screenshot of the Group Tools tab with a tool present (showing the four sub-tabs and a populated tool card) to come.
+![The Group Tools settings tab](/screenshots/group-tools-settings.png)
 
 ## The four sub-tabs
 
