@@ -55,6 +55,7 @@ export default defineConfig({
           { text: 'Creating a Group', link: '/groups/creating-a-group' },
           { text: 'Roles & Stewards', link: '/groups/roles-and-stewards' },
           { text: 'Inviting Members', link: '/groups/inviting-members' },
+          { text: 'Peer Status', link: '/groups/peer-status' },
         ],
       },
       {
