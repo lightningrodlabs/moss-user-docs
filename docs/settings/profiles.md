@@ -22,6 +22,14 @@ You can edit it later from **Group Settings → My Profile**.
 
 ![The per-group My Profile tab](/screenshots/profile-per-group.png)
 
+## Some tools add a third layer
+
+Tools can add **their own profile layer** on top of the per-group one, for information that only makes sense inside that tool. For example, **Vines** (a chat tool) prompts you on first launch for a Vines-specific profile — so you can show colleagues a different display name and avatar in the chat than the one the group sees elsewhere, or set tool-specific bio fields.
+
+> 🚧 Screenshot of Vines' startup profile dialog to come.
+
+Not every tool does this. When a tool *does*, it's separate from your per-group profile — set inside the tool, and only used there.
+
 ## How they relate (and how they don't)
 
 - **The global profile pre-populates** new per-group profiles. That's the only link between them.
