@@ -69,7 +69,10 @@ export default defineConfig({
       {
         text: '⚙️ Settings',
         collapsed: false,
-        items: [{ text: 'Notification Sounds', link: '/settings/notifications' }],
+        items: [
+          { text: 'Your Profile', link: '/settings/profiles' },
+          { text: 'Notification Sounds', link: '/settings/notifications' },
+        ],
       },
     ],
 
