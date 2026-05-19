@@ -73,6 +73,7 @@ export default defineConfig({
         items: [
           { text: 'Your Profile', link: '/settings/profiles' },
           { text: 'Notification Sounds', link: '/settings/notifications' },
+          { text: 'Danger Zone', link: '/settings/danger-zone' },
         ],
       },
     ],
