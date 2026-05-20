@@ -23,6 +23,14 @@ A **group** in Moss is a private peer-to-peer network. When you create a group, 
 - An **invite link** you can share with others (see [Inviting Members](./inviting-members))
 - An empty space with no tools installed yet — that's the next step (see [Adding Tools](../tools/adding-tools))
 
+## Adding a description
+
+Inside the new group you'll see a **+ Add Description** button on the group home. Click it to write a short overview — what the group is for, where to start, who to ask. The description is the first thing newcomers read after they join, and it stays visible on the group home for everyone.
+
+The description field supports **Markdown** — headings, lists, **bold**, *italics*, links, and the rest of the usual syntax. So you can give it a little structure without leaving Moss.
+
+A Steward (or the Progenitor) edits the description; other members see it but can't change it. See [Roles & Stewards](./roles-and-stewards) for who can do what.
+
 ## A group per context
 
 Groups are cheap. If you're collaborating with two different circles of people — say, a book club and a work team — make two groups. Each gets its own private network, its own set of tools, and its own member list.
