@@ -6,7 +6,7 @@ Moss groups sync peer-to-peer. Knowing who's online — and what that means for 
 
 Status indicators live in the **peer panel** of a group's sidebar. Click **Your Peers** in the left side of the group view to expand it. Each member's row shows their avatar, name, role, and a coloured dot for their current status.
 
-> 🚧 Screenshot of the expanded peer panel with a real mix of online / idle / offline peers to come (requires multi-agent capture; will be batched with the hide-member shot below).
+![The expanded peer panel](/screenshots/peer-status-panel.png)
 
 The collapsed sidebar doesn't show per-member dots — only a compact "X/Y online" counter next to the panel button.
 
