@@ -71,6 +71,7 @@ export default defineConfig({
         text: '⚙️ Settings',
         collapsed: false,
         items: [
+          { text: 'Moss Settings', link: '/settings/overview' },
           { text: 'Your Profile', link: '/settings/profiles' },
           { text: 'Notification Sounds', link: '/settings/notifications' },
           { text: 'Danger Zone', link: '/settings/danger-zone' },
