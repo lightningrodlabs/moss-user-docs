@@ -185,3 +185,63 @@ html:not(.dark) .VPFeature:hover {
 html:not(.dark) .VPSidebar {
   backdrop-filter: blur(6px);
 }
+
+/* Nav layout: section links (Home, Intro, Install, Groups, Tools,
+ * Settings) cluster on the left next to the site title; external links
+ * (moss.social, Tool Library, Dev Docs) sit on the right.
+ *
+ * VitePress's default keeps the whole menu pinned to the right edge of
+ * the navbar (.content-body { justify-content: flex-end }). We switch
+ * the body to left-justified and let the menu flex-grow so it spans
+ * across, then push the first external link to the right with
+ * margin-left: auto. Each external link is a VPNavBarMenuLink that
+ * itself carries target="_blank" — VitePress renders it as an <a> with
+ * that class, so the selector is on the link directly, not on a
+ * nested anchor.
+ *
+ * !important overrides VitePress's scoped-CSS selectors, which win on
+ * specificity ties otherwise.
+ */
+.VPNavBar .content-body {
+  justify-content: flex-start !important;
+}
+
+.VPNavBar .VPNavBarMenu {
+  flex-grow: 1 !important;
+  justify-content: flex-start !important;
+}
+
+.VPNavBarMenu .VPNavBarMenuLink:not([target="_blank"])
+  + .VPNavBarMenuLink[target="_blank"] {
+  margin-left: auto !important;
+}
+
+/* "Improve this guide" icon: injected via the nav-bar-content-after slot
+ * in theme/index.ts so we can set a real hover `title` attribute that
+ * VitePress's built-in socialLinks don't expose. The link points at the
+ * docs repo itself, not the app repo, so clicks go to where you'd open
+ * a PR for the page you're on.
+ *
+ * Styled to match VitePress's own VPSocialLink (whose scoped CSS doesn't
+ * apply to elements we render ourselves): same 36×36 box, same icon
+ * sizing, same hover color shift.
+ */
+.improve-this-guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  color: var(--vp-c-text-2);
+  transition: color 0.25s;
+}
+
+.improve-this-guide:hover {
+  color: var(--vp-c-text-1);
+}
+
+.improve-this-guide > svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

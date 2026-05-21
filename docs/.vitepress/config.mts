@@ -24,6 +24,7 @@ export default defineConfig({
       { text: 'Install', link: '/install/download' },
       { text: 'Groups', link: '/groups/creating-a-group' },
       { text: 'Tools', link: '/tools/adding-tools' },
+      { text: 'Settings', link: '/settings/overview' },
       { text: 'moss.social', link: 'https://moss.social' },
       { text: 'Tool Library', link: 'https://moss.social/tools' },
       { text: 'Dev Docs', link: 'https://lightningrodlabs.github.io/moss/' },
@@ -79,6 +80,10 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/lightningrodlabs/moss' }],
+    // The GitHub icon in the navbar is rendered via the theme's slot
+    // override (see theme/index.ts) so we can set a real hover `title`
+    // attribute. The socialLinks list is left empty to avoid a duplicate
+    // icon next to it.
+    socialLinks: [],
   },
 });
