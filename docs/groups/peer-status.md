@@ -12,6 +12,10 @@ The collapsed sidebar doesn't show per-member dots — only a compact "X/Y onlin
 
 ## The three statuses
 
+<img src="/screenshots/peer-status-row.png" alt="A peer row with status dots" style="float: right; margin: 0 0 12px 20px;" />
+
+Each peer row shows the member's avatar with a small dot — that's the status indicator:
+
 - **Online (green dot)** — the member is running Moss and responding right now.
 - **Idle (yellow dot)** — Moss is running for them, but they haven't interacted with it for the last few minutes. Their device is still connected.
 - **Offline (no dot, faded row)** — no recent response. They might be away, asleep, or simply not running Moss.
@@ -20,12 +24,14 @@ A member only counts as **online** in the "X/Y online" tally if they're online *
 
 ## "X / Y online"
 
-The little counter next to the **Your Peers** button shows:
+<img src="/screenshots/peer-status-counter.png" alt="The X/Y online counter" style="float: right; margin: 0 0 12px 20px;" />
+
+The compact counter you see in the group's left sidebar shows how many peers you can reach right now:
 
 - **X** — how many *other* members are currently online or idle.
 - **Y** — how many other members the group has in total.
 
-You're not counted — it's "peers I can reach right now" over "peers in this group besides me."
+You're not counted — it's "peers I can reach right now" over "peers in this group besides me." Click it to expand the full peer panel.
 
 ## Sync expectations
 
